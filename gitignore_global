@@ -1,0 +1,6 @@
+# intellij
+/idea
+*idea/
+idea/
+.idea/
+*.iml

@@ -1,0 +1,22 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	co = checkout
+	b = branch
+	bl = branch --list
+	amend = commit -a --amend --no-edit
+	pushf = push --force-with-lease
+	pushtest = "!f() { git push origin $(git branch --show-current):integration-test; }; f"
+	pushtestf = "!f() { git push origin --force-with-lease $(git branch --show-current):integration-test; }; f"
+
+
+[user]
+	name = koblerkristian
+	email = kristian.brox@kobler.no
+[pull]
+	ff = only
+[core]
+	excludesfile = /Users/kristianbrox/.gitignore
+[init]
+	defaultBranch = master
+[push]
+	autoSetupRemote = true
