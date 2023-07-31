@@ -1,18 +1,22 @@
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
-alias testit="echo TEST BASHRC"
 alias fix="mvn ktlint:format"
 
-alias kd="aws-vault exec kobler-dev"
 alias kd="aws-vault exec kobler-dev --"
 alias kp="aws-vault exec kobler-prod --"
 alias kr="aws-vault exec kobler-root --"
 
 # alias gitprune="git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done"
 
-export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+# Load Bash completions
+# Workaround a bug in bash-completion@2 2.10
+# https://github.com/scop/bash-completion/issues/374
+# https://github.com/Homebrew/homebrew-core/pull/47527
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d" 
 
+#[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+[[ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
+#[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 eval "$(rbenv init -)"
 
 
@@ -23,4 +27,3 @@ eval "$(jenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 # [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
