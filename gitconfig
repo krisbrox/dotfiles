@@ -10,8 +10,8 @@
 	prunelocal = "!f() { git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done; }; f"
 
 [user]
-	name = koblerkristian
-	email = kristian.brox@kobler.no
+	name = "Kristian Hesselberg Brox"
+	email = kristian.brox@gmail.com
 [pull]
 	ff = only
 [core]
