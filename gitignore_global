@@ -4,3 +4,5 @@
 idea/
 .idea/
 *.iml
+.azuredevops/configuration/android/.gradle/
+certs/
