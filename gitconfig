@@ -12,6 +12,7 @@
 [user]
 	name = "Kristian Hesselberg Brox"
 	email = kristian.brox@gmail.com
+	signingkey = /Users/kristianbrox/.ssh/id_rsa.pub
 [pull]
 	ff = only
 [core]
@@ -22,3 +23,5 @@
 	autoSetupRemote = true
 [git-extras]
 	default-branch = master
+[gpg]
+	format = ssh
