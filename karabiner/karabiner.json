@@ -65,7 +65,7 @@
                                     "key_code": "1",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_option"
+                                            "left_option"
                                         ],
                                         "optional": []
                                     }
@@ -74,8 +74,8 @@
                                     {
                                         "key_code": "8",
                                         "modifiers": [
-                                            "right_option",
-                                            "right_shift"
+                                            "left_option",
+                                            "left_shift"
                                         ]
                                     }
                                 ],
