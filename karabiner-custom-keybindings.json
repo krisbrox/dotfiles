@@ -26,7 +26,7 @@
                 "key_code": "non_us_backslash",
                 "modifiers": {
                     "mandatory": [
-                        "left_option"
+                        "right_option"
                     ],
                     "optional": []
                 }
@@ -35,7 +35,7 @@
                 {
                     "key_code": "7",
                     "modifiers": [
-                        "left_option"
+                        "right_option"
                     ]
                 }
             ],
