@@ -2,11 +2,13 @@
 # Alias 
 alias ls="ls -la"
 alias gits="git status"
-alias awsprod="aws-vault exec prod --"
+# Alias: aws
+alias awsbrox="aws-vault exec prod-brox --"
+alias awssa="aws-vault exec prod-saas --"
 
+
+# Autoconfigured
 _comp_options+=(globdots) # With hidden files
-
-
 autoload -U compinit; compinit
 
 

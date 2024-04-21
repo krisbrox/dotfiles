@@ -24,4 +24,4 @@
 [git-extras]
 	default-branch = master
 [commit]
-	gpgsign = true
+	gpgsign = false
