@@ -1,5 +1,4 @@
-
-# Alias 
+# Alias
 alias ls="ls -la"
 alias gits="git status"
 # Alias: aws
@@ -37,3 +36,5 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+DISABLE_AUTO_TITLE="true"
