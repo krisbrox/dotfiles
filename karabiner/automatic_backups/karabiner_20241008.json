@@ -8,6 +8,11 @@
                         "description": "opt + ' -> |; opt + 1 -> {; opt + 2 -> }",
                         "manipulators": [
                             {
+                                "from": { "key_code": "non_us_backslash" },
+                                "to": [{ "key_code": "grave_accent_and_tilde" }],
+                                "type": "basic"
+                            },
+                            {
                                 "from": {
                                     "key_code": "non_us_backslash",
                                     "modifiers": {
@@ -111,12 +116,8 @@
             "selected": true,
             "virtual_hid_keyboard": {
                 "country_code": 1,
-                "keyboard_type_v2": "ansi"
+                "keyboard_type_v2": "iso"
             }
-        },
-        {
-            "name": "New profile",
-            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
         }
     ]
 }

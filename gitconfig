@@ -21,6 +21,7 @@
 	defaultBranch = master
 [push]
 	autoSetupRemote = true
+	default = current
 [git-extras]
 	default-branch = main
 [commit]

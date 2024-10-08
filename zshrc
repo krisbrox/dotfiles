@@ -38,3 +38,4 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 DISABLE_AUTO_TITLE="true"
+export ANDROID_HOME="~/.android-sdk/platform-tools"
