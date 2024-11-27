@@ -39,3 +39,6 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 DISABLE_AUTO_TITLE="true"
 export ANDROID_HOME="~/.android-sdk/platform-tools"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
