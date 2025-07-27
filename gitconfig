@@ -8,6 +8,7 @@
 	pushtest = "!f() { git push origin $(git branch --show-current):integration-test; }; f"
 	pushtestf = "!f() { git push origin --force-with-lease $(git branch --show-current):integration-test; }; f"
 	prunelocal = "!f() { git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done; }; f"
+  remove = restore --staged
 
 [user]
 	name = "Kristian Hesselberg Brox"
