@@ -5,7 +5,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "fix | and \\ with left hand",
+                        "description": "opt + ' -> |; opt + 1 -> {; opt + 2 -> }",
                         "manipulators": [
                             {
                                 "from": {
@@ -39,27 +39,6 @@
                                 ],
                                 "type": "basic"
                             },
-                            {
-                                "from": {
-                                    "key_code": "non_us_backslash",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift", "left_option"],
-                                        "optional": []
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "7",
-                                        "modifiers": ["right_shift", "right_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "fix {} with left hand",
-                        "manipulators": [
                             {
                                 "from": {
                                     "key_code": "1",

@@ -43,3 +43,7 @@ export ANDROID_HOME="~/.android-sdk/platform-tools"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add pwd to PATH
+export PATH="./:${PATH}"
+
